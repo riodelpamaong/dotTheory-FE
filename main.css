@@ -9,6 +9,10 @@ main {
     margin: 100px auto 0 auto;
 }
 
+.detail {
+    margin-bottom: 24px;
+}
+
 .detail-info> :first-child {
     display: flex;
     align-items: center;
@@ -114,4 +118,61 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.review-item {
+    padding: 16px 24px 12px;
+    border: 1px solid #e0e0e0;
+    margin: 12px 0;
+}
+
+.user-info {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.user-name:hover {
+    text-decoration: underline;
+}
+
+.user-location {
+    font-size: 12px;
+    line-height: 16px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-rating {
+    padding: 12px 0 0;
+}
+
+.review-title {
+    font-size: 18px;
+    line-height: 22px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+.review-title:hover {
+    text-decoration: underline;
+}
+
+.review-description {
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+
+.review-stay-date {
+    font-size: 14px;
 }
