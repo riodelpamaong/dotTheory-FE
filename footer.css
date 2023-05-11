@@ -1,0 +1,39 @@
+
+footer {
+    padding: 32px 24px;
+    background-color: #faf1ed;
+    margin-top: 24px;
+}
+
+footer> :first-child {
+    max-width: 1016px;
+    margin: 0 auto
+}
+
+.footer-top {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 6px;
+}
+
+.footer-text {
+    font-size: 12px;
+    color: #333;
+}
+
+.footer-links span {
+    margin-right: 16px;
+}
+
+.footer-links a {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin-bottom: 1em;
+    color: #333;
+}

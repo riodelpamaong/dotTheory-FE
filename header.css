@@ -1,0 +1,36 @@
+
+header {
+    padding: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    width: calc(1136px + 24px *2);
+    margin: 0 auto;
+}
+
+.header-logo {
+    flex: 1;
+}
+
+.header-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.header-signin-button {
+    background-color: #000;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 20px;
+    line-height: 20px;
+}
