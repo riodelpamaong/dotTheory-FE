@@ -1,0 +1,30 @@
+.homepage-main {
+  max-width: 100%;
+  width: calc(1136px + 24px *2);
+  padding: 24px 0;
+}
+.search-container {
+  background-color: blanchedalmond;
+}
+.search-container-inner {
+  position: relative;
+}
+.search-background {
+  width: 100%;
+}
+.search-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 50%;
+}
+.input-wrapper {
+  display: flex;
+}
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+}
