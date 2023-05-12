@@ -6,6 +6,7 @@ header {
     width: 100%;
     background-color: #fff;
     padding: 20px;
+    z-index: 1;
 }
 header nav {
     display: flex;
