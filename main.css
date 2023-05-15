@@ -28,7 +28,7 @@ main {
     cursor: pointer;
 }
 .material-symbols-outlined {
-    font-size: 20px !important;
+    font-size: 1.5rem !important;
 }
 .detail-info-bottom {
     display: flex;
@@ -107,7 +107,7 @@ main {
     text-decoration: underline;
 }
 .user-location {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #757575;
     display: flex;
@@ -123,7 +123,7 @@ main {
     padding: 12px 0 0;
 }
 .review-title {
-    font-size: 18px;
+    font-size: 1.125;
     line-height: 22px;
     margin: 8px 0;
     font-weight: 700;
@@ -137,7 +137,7 @@ main {
     margin-bottom: 12px;
 }
 .review-stay-date {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .badge.budget-hotel {
     background-color: #f2b203;
@@ -157,7 +157,7 @@ main {
     right: 20px;
     padding: 4px 8px;
     border-radius: 4px;
-    font-size: 12px;
+    font-size: 0.75;
 }
 .gallery {
     display: flex;
@@ -179,7 +179,7 @@ main {
     margin-bottom: -4px;
 }
 .description>a {
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     margin-bottom: 4px;
     display: block;
@@ -194,14 +194,14 @@ main {
     padding-top: 2px;
 }
 .rating>span {
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     color: #8c8c8c;
     margin-left: 5px;
 }
 .location {
     padding-top: 2px;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 16px;
     display: block;
     margin-bottom: 4px;
@@ -209,4 +209,39 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+/* horizontal scroll container */
+.gallery-container {
+    display: grid;
+    grid-auto-columns: calc(100% - 2rem);
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    overflow-x: auto;
+    padding: 0 10px;
+    scroll-snap-type: x mandatory;
+}
+.gallery-container-item {
+    scroll-snap-align: center;
+}
+.gallery-container-item>img {
+    width: 100%;
+    height: auto;
+}
+/* Tablet styles */
+@media (min-width: 768px){
+    body {
+        font-size: 18px;
+   }
+    .gallery-container {
+        grid-auto-columns: calc(50% - 2rem);
+   }
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+   }
+    .gallery-container {
+        grid-auto-columns: calc(25% - 2rem);
+   }
 }

@@ -8,6 +8,12 @@
 }
 .search-container-inner {
   position: relative;
+  height:348px;
+}
+.search-container-inner > img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .search-background {
   width: 100%;
@@ -28,3 +34,7 @@
   padding: 10px;
   border-radius: 10px;
 }
+section>a {
+  padding: 0 10px 
+}
+

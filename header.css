@@ -14,14 +14,10 @@ header nav {
     max-width: 100%;
     width: calc(1136px + 24px *2);
     margin: 0 auto;
-}
-.header-logo {
-    flex: 1;
+    justify-content: space-between;
 }
 .header-links {
-    display: flex;
-    gap: 24px;
-    align-items: center;
+    display: none;
 }
 .header-signin-button {
     background-color: #000;
@@ -35,7 +31,7 @@ header nav {
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #888888;
     padding-left: 12px;
 }
@@ -43,7 +39,7 @@ header nav {
     content: ">";
     color: #888888;
     margin: 0 8px;
-    font-size: 10px;
+    font-size: 0.625rem;
 }
 .secondary-nav li:last-child::after {
     content: "";
@@ -57,4 +53,22 @@ header nav {
 .secondary-nav li {
     display: inline-block;
     cursor: pointer;
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+   }
+    .hamburger-menu-icon{
+        display: none !important;
+   }
+    .header-logo {
+        flex: 1;
+   }
+    .header-links {
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        margin-left:24px;
+   }
 }

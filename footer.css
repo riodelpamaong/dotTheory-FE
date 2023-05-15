@@ -13,7 +13,7 @@ footer> :first-child {
     margin-bottom: 6px;
 }
 .footer-text {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #333;
 }
 .footer-links span {
@@ -23,7 +23,7 @@ footer> :first-child {
     text-decoration: underline;
 }
 .footer-bottom {
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 .footer-bottom p {
     margin-bottom: 1em;
