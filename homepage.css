@@ -24,7 +24,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  width: 50%;
+  width: 80%;
 }
 .input-wrapper {
   display: flex;
@@ -37,4 +37,9 @@
 section>a {
   padding: 0 10px 
 }
-
+/* Tablet styles */
+@media (min-width: 768px) {
+  .search-form {
+    width: 50%;
+  }
+}

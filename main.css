@@ -32,17 +32,25 @@ main {
 }
 .detail-info-bottom {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     color: #333;
+    gap:10px;
 }
 .detail-info-reviews, .detail-info-reviews>a, .detail-info-location, .detail-info-category {
     display: flex;
     align-items: center;
     gap: 5px;
 }
+.detail-info-reviews {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.detail-info-reviews > a > svg {
+    display: none;
+}
 .show-prices-button {
     background-color: #f2b203;
-    border-radius: 24px;
+    border-radius: 4px;
     padding: 14px 24px;
     cursor: pointer;
 }
@@ -54,6 +62,7 @@ main {
     height: 22px;
     margin: 0 20px;
     width: 1px;
+    display: none;
 }
 .detail-info-bottom> :first-child {
     flex: 1;
@@ -100,8 +109,8 @@ main {
 .user-info {
     display: flex;
     gap: 10px;
-    align-items: center;
     margin-bottom: 12px;
+    flex-direction: column;
 }
 .user-name:hover {
     text-decoration: underline;
@@ -158,21 +167,6 @@ main {
     padding: 4px 8px;
     border-radius: 4px;
     font-size: 0.75rem;
-}
-.gallery {
-    display: flex;
-}
-.gallery-item {
-    width: 25%;
-    padding: 12px;
-    position: relative;
-}
-.gallery-item>img {
-    width: 100%;
-    height: 201px;
-    object-fit: cover;
-    border-radius: 2px;
-    cursor: pointer;
 }
 .description {
     padding: 10px 0 0;
@@ -238,19 +232,33 @@ main {
 }
 /* Tablet styles */
 @media (min-width: 768px) {
-    body {
-        font-size: 18px;
-   }
     .gallery-container {
         grid-auto-columns: calc(50% - 2rem);
+   }
+    .detail-info-reviews {
+        flex-direction: row;
+   }
+    .detail-info-reviews > a > svg {
+        display: inline-block;
+   }
+    .divider {
+        display: inline-block;
    }
 }
 /* Desktop styles */
 @media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-   }
     .gallery-container {
         grid-auto-columns: calc(25% - 2rem);
+   }
+    .show-prices-button{
+        border-radius: 24px;
+   }
+    .detail-info-bottom {
+        align-items: center;
+        flex-direction: row;
+   }
+    .user-info {
+        align-items: flex-start;
+        flex-direction: row;
    }
 }

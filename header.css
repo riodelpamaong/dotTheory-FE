@@ -33,7 +33,6 @@ header nav {
     margin-top: 12px;
     font-size: 0.875rem;
     color: #888888;
-    padding-left: 12px;
 }
 .secondary-nav li::after {
     content: ">";
@@ -56,9 +55,6 @@ header nav {
 }
 /* Desktop styles */
 @media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-   }
     .hamburger-menu-icon{
         display: none !important;
    }
@@ -70,5 +66,8 @@ header nav {
         gap: 24px;
         align-items: center;
         margin-left:24px;
+   }
+    .secondary-nav {
+        padding-left: 12px;
    }
 }
