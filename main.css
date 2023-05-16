@@ -6,6 +6,9 @@ main {
     margin-top: 100px;
     max-width: 1016px;
     margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:64px;
 }
 .detail {
     margin-bottom: 24px;
@@ -105,6 +108,7 @@ main {
     padding: 16px 24px 12px;
     border: 1px solid #e0e0e0;
     margin: 12px 0;
+    flex-basis: calc(50% - 5px);
 }
 .user-info {
     display: flex;
@@ -230,6 +234,8 @@ main {
     width: 100%;
     height: auto;
 }
+
+
 /* Tablet styles */
 @media (min-width: 768px) {
     .gallery-container {
@@ -244,6 +250,11 @@ main {
     .divider {
         display: inline-block;
    }
+   .review-items {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
 }
 /* Desktop styles */
 @media (min-width: 1024px) {
