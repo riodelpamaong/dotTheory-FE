@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+main {
+    padding: 24px;
+    margin-top: 100px;
+    max-width: 1016px;
+    margin: 100px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap:64px;
+}
+.detail {
+    margin-bottom: 24px;
+}
+.detail-info> :first-child {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.detail-info-title {
+    flex: 1;
+}
+.add-to-trips-button {
+    background: none;
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 4px;
+    min-height: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.material-symbols-outlined {
+    font-size: 1.5rem !important;
+}
+.detail-info-bottom {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    gap:10px;
+}
+.detail-info-reviews, .detail-info-reviews>a, .detail-info-location, .detail-info-category {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.detail-info-reviews {
+    align-items: flex-start;
+    flex-direction: column;
+}
+.detail-info-reviews > a > svg {
+    display: none;
+}
+.show-prices-button {
+    background-color: #f2b203;
+    border-radius: 4px;
+    padding: 14px 24px;
+    cursor: pointer;
+}
+.detail-info-location>a:hover {
+    text-decoration: underline;
+}
+.divider {
+    background-color: #e0e0e0;
+    height: 22px;
+    margin: 0 20px;
+    width: 1px;
+    display: none;
+}
+.detail-info-bottom> :first-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.detail-image-container {
+    margin-top: 24px;
+}
+.detail-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 468px;
+}
+.detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail-image-bottom {
+    display: flex;
+    gap: 3px;
+    margin-top: 3px;
+}
+.detail-image-bottom>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 208px;
+    flex: 1;
+}
+.detail-image-bottom>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.review-item {
+    padding: 16px 24px 12px;
+    border: 1px solid #e0e0e0;
+    margin: 12px 0;
+    flex-basis: calc(50% - 5px);
+}
+.user-info {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 12px;
+    flex-direction: column;
+}
+.user-name:hover {
+    text-decoration: underline;
+}
+.user-location {
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #757575;
+    display: flex;
+    align-items: center;
+}
+.user-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-rating {
+    padding: 12px 0 0;
+}
+.review-title {
+    font-size: 1.125;
+    line-height: 22px;
+    margin: 8px 0;
+    font-weight: 700;
+}
+.review-title:hover {
+    text-decoration: underline;
+}
+.review-description {
+    color: #333;
+    line-height: 20px;
+    margin-bottom: 12px;
+}
+.review-stay-date {
+    font-size: 0.875rem;
+}
+.badge.budget-hotel {
+    background-color: #f2b203;
+    color: #ffffff;
+}
+.badge.casino-hotel {
+    background-color: #3366cc;
+    color: #ffffff;
+}
+.badge.spa-hotel {
+    background-color: #ff66cc;
+    color: #ffffff;
+}
+.badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+.description {
+    padding: 10px 0 0;
+    margin-bottom: -4px;
+}
+.description>a {
+    font-size: 1rem;
+    line-height: 20px;
+    margin-bottom: 4px;
+    display: block;
+}
+.description>a:hover {
+    text-decoration: underline;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding-top: 2px;
+}
+.rating>span {
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #8c8c8c;
+    margin-left: 5px;
+}
+.location {
+    padding-top: 2px;
+    font-size: 0.75rem;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 4px;
+    color: #8c8c8c;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* horizontal scroll container */
+.gallery-container {
+    display: grid;
+    grid-auto-columns: calc(100% - 2rem);
+    grid-auto-flow: column;
+    grid-gap: 16px;
+    overflow-x: auto;
+    padding: 0 10px;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;
+   /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+   /* for Firefox */
+}
+.gallery-container::-webkit-scrollbar {
+    display: none;
+   /* for Chrome, Safari, and Opera */
+}
+.gallery-container-item {
+    scroll-snap-align: center;
+    position: relative;
+}
+.gallery-container-item>img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Tablet styles */
+@media (min-width: 768px) {
+    .gallery-container {
+        grid-auto-columns: calc(50% - 2rem);
+   }
+    .detail-info-reviews {
+        flex-direction: row;
+   }
+    .detail-info-reviews > a > svg {
+        display: inline-block;
+   }
+    .divider {
+        display: inline-block;
+   }
+   .review-items {
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+}
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .gallery-container {
+        grid-auto-columns: calc(25% - 2rem);
+   }
+    .show-prices-button{
+        border-radius: 24px;
+   }
+    .detail-info-bottom {
+        align-items: center;
+        flex-direction: row;
+   }
+    .user-info {
+        align-items: flex-start;
+        flex-direction: row;
+   }
+}
