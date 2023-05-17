@@ -1,17 +1,29 @@
+/* css style for browse page/hotels */
 .hotels {
     max-width: 1280px;
     margin: 0 auto;
     margin: 100px auto 0 auto;
 }
-section>a {
-    display: block;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 1.5rem ;
-    line-height: 28px;
-    color: #000;
-    margin-bottom: 24px;
+.rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+    padding-top: 2px;
 }
-section>a:hover {
-    text-decoration: underline;
+.rating>span {
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #8c8c8c;
+}
+.rating svg {
+    display: none;
+}
+/* Desktop styles */
+@media (min-width: 1024px) {
+    .rating svg {
+        display: block;
+   }
+    .rating>span {
+        margin-left: 10px;
+   }
 }

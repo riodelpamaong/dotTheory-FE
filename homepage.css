@@ -1,6 +1,5 @@
 .homepage-main {
   max-width: 100%;
-  width: calc(1136px + 24px *2);
   padding: 24px 0;
 }
 .search-container {
@@ -34,12 +33,9 @@
   padding: 10px;
   border-radius: 10px;
 }
-section>a {
-  padding: 0 10px 
-}
 /* Tablet styles */
 @media (min-width: 768px) {
   .search-form {
-    width: 50%;
-  }
+      width: 50%;
+ }
 }
