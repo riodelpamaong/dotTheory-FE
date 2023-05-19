@@ -1,38 +1,38 @@
 footer {
-    padding: 32px 24px;
-    background-color: $peach;
-    margin-top: 24px;
+  padding: 32px 24px;
+  background-color: $peach;
+  margin-top: 24px;
 
-    > :first-child {
-        max-width: 1016px;
-        margin: 0 auto;
+  > :first-child {
+    max-width: 1016px;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 6px;
+  }
+
+  .footer-text {
+    font-size: 0.75rem;
+  }
+
+  .footer-links {
+    span {
+      margin-right: 16px;
     }
 
-    .footer-top {
-        display: flex;
-        gap: 16px;
-        margin-bottom: 6px;
+    a {
+      text-decoration: underline;
     }
+  }
 
-    .footer-text {
-        font-size: 0.75rem;
+  .footer-disclaimer {
+    font-size: 0.75rem;
+
+    p {
+      margin-bottom: 1em;
     }
-
-    .footer-links {
-        span {
-            margin-right: 16px;
-        }
-
-        a {
-            text-decoration: underline;
-        }
-    }
-
-    .footer-disclaimer {
-        font-size: 0.75rem;
-
-        p {
-            margin-bottom: 1em;
-        }
-    }
+  }
 }

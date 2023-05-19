@@ -5,9 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"sass --watch scss:css",
-    "prod":"sass --watch scss:css --style compressed"
+    "dev": "sass --watch scss:css",
+    "prod": "sass scss:css --style compressed",
+    "format": "prettier --write '**/*.html' '**/*.scss'"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
 }
