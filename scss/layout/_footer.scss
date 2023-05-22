@@ -22,9 +22,25 @@ footer {
     span {
       margin-right: 16px;
     }
+  }
 
-    a {
+  .footer-link-item {
+    color: $color-text-dark;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $color-text-strong;
       text-decoration: underline;
+    }
+
+    &:active {
+      color: $jungle-green;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
     }
   }
 
