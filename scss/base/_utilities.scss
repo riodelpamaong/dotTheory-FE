@@ -1,0 +1,28 @@
+@use 'sass:map';
+
+.divider {
+  background-color: $color-divider;
+  height: 22px;
+  margin: 0 20px;
+  width: 1px;
+  display: none;
+
+  @media #{$brk-narrow} {
+    display: inline-block;
+  }
+}
+
+@each $badge-type, $badge-color in $badge-colors {
+  .badge.#{$badge-type} {
+    @include badge($badge-color);
+  }
+}
+
+.badge {
+  position: absolute;
+  top: map-get($badge-position, top);
+  right: map-get($badge-position, right);
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
+  font-size: $badge-font-size;
+}
