@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"npx tailwindcss -i ./css/main.css -o ./dist/main.css --watch",
+    "dev": "npx tailwindcss -i ./css/main.css -o ./dist/main.css --watch",
     "sass-dev": "sass --watch scss:css",
     "prod": "sass scss:css --style compressed",
     "format": "prettier --write '**/*.html' '**/*.scss'"
@@ -14,6 +14,7 @@
   "license": "ISC",
   "devDependencies": {
     "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
     "tailwindcss": "^3.3.2"
   }
 }
