@@ -3,60 +3,58 @@
 @tailwind utilities;
 
 :root {
-    --white: #fff;
-    --black: #000;
-    --light-gray: #e0e0e0;
-    --grey-100: #888888;
-    --grey-300: #8c8c8c;
-    --grey-500: #757575;
-    --grey-700: #333333;
-    --golden-yellow: #f2b203;
-    --hot-pink: #ff66cc;
-    --royal-blue: #3366cc;
-    --peach: #faf1ed;
-    --jungle-green: #027f3e;
+  --white: #fff;
+  --black: #000;
+  --light-gray: #e0e0e0;
+  --grey-100: #888888;
+  --grey-300: #8c8c8c;
+  --grey-500: #757575;
+  --grey-700: #333333;
+  --golden-yellow: #f2b203;
+  --hot-pink: #ff66cc;
+  --royal-blue: #3366cc;
+  --peach: #faf1ed;
+  --jungle-green: #027f3e;
 
-    /* Functional color variables */
-    --color-text-light: var(--grey-100);
-    --color-text-medium: var(--grey-300);
-    --color-text-strong: var(--grey-500);
-    --color-text-base: var(--grey-700);
-    --color-text-dark: var(--black);
-    --color-body: var(--white);
-    --color-divider: var(--light-gray);
-    --color-text-badge: var(--white);
+  /* Functional color variables */
+  --color-text-light: var(--grey-100);
+  --color-text-medium: var(--grey-300);
+  --color-text-strong: var(--grey-500);
+  --color-text-base: var(--grey-700);
+  --color-text-dark: var(--black);
+  --color-body: var(--white);
+  --color-divider: var(--light-gray);
+  --color-text-badge: var(--white);
 
-    /* badge */
-    --badge-color-budget-hotel: var(--golden-yellow);
-    --badge-color-casino-hotel: var(--royal-blue);
-    --badge-color-spa-hotel: var(--hot-pink);
-    --badge-position-top: 20px;
-    --badge-position-right: 20px;
-    --badge-padding: 4px 8px;
-    --badge-border-radius: 4px;
-    --badge-font-size: 0.75rem;
+  /* badge */
+  --badge-color-budget-hotel: var(--golden-yellow);
+  --badge-color-casino-hotel: var(--royal-blue);
+  --badge-color-spa-hotel: var(--hot-pink);
+  --badge-position-top: 20px;
+  --badge-position-right: 20px;
+  --badge-padding: 4px 8px;
+  --badge-border-radius: 4px;
+  --badge-font-size: 0.75rem;
 
-    /* Font stacks */
-    --stack-sans-serif: Helvetica, Arial, sans-serif;
-    --stack-arial: Arial, Helvetica, sans-serif;
+  /* Font stacks */
+  --stack-sans-serif: Helvetica, Arial, sans-serif;
+  --stack-arial: Arial, Helvetica, sans-serif;
 }
 
-
 @layer utilities {
-    .link-underline::before {
-      content: '';
-      position: absolute;
-      bottom: -1px;
-      left: 0;
-      width: 100%;
-      height: 2px;
-      background-color: var(--color-text-base);
-      transform: scaleX(0);
-      transition: transform 0.3s ease;
-    }
-  
-    .link-underline:hover::before {
-      transform: scaleX(1);
-    }
+  .link-underline::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-text-base);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
-  
+
+  .link-underline:hover::before {
+    transform: scaleX(1);
+  }
+}

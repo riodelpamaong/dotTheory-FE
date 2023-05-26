@@ -6,9 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./css/main.css -o ./dist/main.css --watch",
-    "sass-dev": "sass --watch scss:css",
-    "prod": "sass scss:css --style compressed",
-    "format": "prettier --write '**/*.html' '**/*.scss'"
+    "prod": "npx tailwindcss -i ./dist/main.css -o ./dist/build.css --minify",
+    "format": "prettier --write '**/*.html' 'css/*.css'"
   },
   "author": "",
   "license": "ISC",
