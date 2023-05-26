@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/build.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <title>Tripadvisor</title>
+  </head>
+  <body>
+    <div class="grid grid-rows-[auto_1fr_auto]">
+      <header class="fixed left-0 top-0 z-10 w-full bg-white p-6">
+        <nav
+          aria-label="primary"
+          class="flex w-full items-center justify-center"
+        >
+          <span class="material-symbols-outlined lg:!hidden"> menu </span>
+          <a href="#" class="relative flex-1">
+            <img
+              src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+              alt="TripAdvisor logo"
+              width="188px"
+              class="mx-auto lg:m-0"
+            />
+          </a>
+          <a href="hotels.html" class="link-underline relative">
+            <span class="material-symbols-outlined"> hotel </span></a
+          >
+          <div class="ml-6 hidden items-center gap-6 lg:flex">
+            <a href="#edit" class="link-underline relative">
+              <span class="material-symbols-outlined">edit</span>
+            </a>
+            <a href="#trips" class="link-underline relative">
+              <span class="material-symbols-outlined">favorite</span>
+            </a>
+            <a href="#notification" class="link-underline relative">
+              <span class="material-symbols-outlined"
+                >notifications_active</span
+              >
+            </a>
+            <a
+              class="rounded-2xl bg-[var(--color-text-dark)] px-4 py-2.5 leading-5 text-white"
+              href="#SignIn"
+              >Sign In</a
+            >
+            <a href="#Cart" class="link-underline relative">
+              <span class="material-symbols-outlined">shopping_cart</span>
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main class="mt-24 flex flex-col gap-8">
+        <section class="bg-blanchedalmond">
+          <div class="relative h-96">
+            <img
+              src="https://static.tacdn.com/img2/brand/home/homemar2022_dt_trans.png"
+              alt="Background Image"
+              class="h-full w-full object-cover object-center"
+            />
+            <div
+              class="absolute left-1/2 top-1/2 w-4/5 -translate-x-1/2 -translate-y-1/2 transform text-center lg:w-2/5"
+            >
+              <form action="">
+                <div class="flex">
+                  <input
+                    type="search"
+                    placeholder="Where to?"
+                    class="w-full rounded-full p-2"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="lg:px-8">
+          <h1
+            class="mb-6 cursor-pointer px-2 text-xl font-bold text-gray-800 hover:underline"
+          >
+            Top Budget Hotels
+          </h1>
+          <div
+            class="grid snap-x snap-mandatory auto-cols-100 grid-flow-col overflow-auto px-2.5 md:auto-cols-[calc(50%-2rem)] lg:auto-cols-[25%]"
+          >
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/29/08/38/b9/entrance.jpg"
+                alt="Turin Palace Hotel"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-turin.html" class="mb-1 text-base"
+                  >Turin Palace Hotel</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Turin, Italy
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/1e/1d/20/fb/miscellaneous.jpg"
+                alt="Tamassa Resort"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-tamassa.html" class="mb-1 text-base"
+                  >Tamassa Resort</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Coastal Road, Bel Ombre, Mauritius
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lg:px-8">
+          <h1
+            class="mb-6 cursor-pointer px-2 text-xl font-bold text-gray-800 hover:underline"
+          >
+            Top Spa Hotels
+          </h1>
+          <div
+            class="snap-mandator grid snap-x auto-cols-100 grid-flow-col overflow-auto px-2.5 md:auto-cols-[calc(50%-2rem)] lg:auto-cols-[25%]"
+          >
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/18/7f/6b/d3/pool-excellence-playa.jpg"
+                alt="Excellence Playa Mujeres"
+                class="w-full"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-excellence.html" class="mb-1 text-base"
+                  >Excellence Playa Mujeres</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Playa Mujeres, Mexico
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/10/56/0d/b8/aerial.jpg"
+                alt="Kurumba Maldives"
+                class="w-full"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-kurumba.html" class="mb-1 text-base"
+                  >Kurumba Maldives</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Vihamanafushi
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/26/84/17/37/exterior.jpg"
+                alt="Mandapa, a Ritz-Carlton Reserve"
+                class="w-full"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-mandapa.html" class="mb-1 text-base"
+                  >Mandapa, a Ritz-Carlton Reserve</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Kedewatan, Indonesia
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="lg:px-8">
+          <h1
+            class="mb-6 cursor-pointer px-2 text-xl font-bold text-gray-800 hover:underline"
+          >
+            Top Casino Hotels
+          </h1>
+          <div
+            class="grid snap-x snap-mandatory auto-cols-100 grid-flow-col overflow-auto px-2.5 md:auto-cols-[calc(50%-2rem)] lg:auto-cols-[25%]"
+          >
+            <!-- card -->
+            <div
+              class="relative box-border w-[calc(100%-8px)] snap-center rounded-md bg-white duration-300 ease-in hover:scale-100 hover:bg-peach lg:scale-95 lg:p-4"
+              tabindex="0"
+            >
+              <img
+                src="https://media-cdn.tripadvisor.com/media/photo-s/23/e0/e2/45/the-serras-entrance.jpg"
+                alt="Serras Barcelona"
+              />
+              <div class="-mb-1 pt-2.5">
+                <a href="hotel-serras.html" class="mb-1 text-base"
+                  >Serras Barcelona</a
+                >
+                <div
+                  class="pt-0.125rem mb-1 text-ellipsis text-xs text-[var(--color-text-medium)]"
+                >
+                  Barcelona, Spain
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="mt-6 bg-peach px-6 py-8">
+        <div class="lg:mx-auto lg:w-10/12">
+          <div class="mb-3 flex gap-4">
+            <a href="#">
+              <img
+                src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_logoset_solid_green.svg"
+                alt="TripAdvisor footer logo"
+                width="40px"
+                height="40px"
+                class="max-w-none"
+              />
+            </a>
+            <div>
+              <p class="text-xs">
+                &copy; 2023 Tripadvisor LLC All rights reserved.
+              </p>
+              <nav>
+                <span class="mr-4">
+                  <a
+                    href="about-us.html"
+                    class="link-underline relative transition delay-150 ease-in hover:text-[var(--color-text-strong)]"
+                    >About Us</a
+                  >
+                </span>
+                <span class="mr-4">
+                  <a
+                    href="#"
+                    class="link-underline relative transition delay-150 ease-in hover:text-[var(--color-text-strong)]"
+                    >View the Privacy and Cookie Statement</a
+                  >
+                </span>
+                <span class="mr-4">
+                  <a
+                    href="#"
+                    class="link-underline relative transition delay-150 ease-in hover:text-[var(--color-text-strong)]"
+                    >Give Cookie consent</a
+                  >
+                </span>
+                <span class="mr-4">
+                  <a
+                    href="#"
+                    class="link-underline relative transition delay-150 ease-in hover:text-[var(--color-text-strong)]"
+                    >Learn how the site works</a
+                  >
+                </span>
+                <span class="mr-4">
+                  <a
+                    href="#"
+                    class="link-underline relative transition delay-150 ease-in hover:text-[var(--color-text-strong)]"
+                    >Contact us</a
+                  >
+                </span>
+              </nav>
+            </div>
+          </div>
+          <div class="text-xs">
+            <p class="mb-4">Some photos provided by VFM Leonardo.</p>
+            <p class="mb-4">
+              This is the version of our website addressed to speakers of
+              English in the United States. If you are a resident of another
+              country or region, please select the appropriate version of
+              Tripadvisor for your country or region in the drop-down menu.
+              <button
+                aria-label="Read more about the website version and language options"
+              >
+                more
+              </button>
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
